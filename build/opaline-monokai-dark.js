@@ -1,115 +1,24 @@
-let fs = require("fs");
+let createTheme = require("./create-theme");
 
-let nonEssentials = [
-  "cast.expr.ts",
-  "keyword.control.as.ts",
-  "keyword.control.at-rule.import",
-  "keyword.control.default",
-  "keyword.control.export",
-  "keyword.control.from",
-  "keyword.control.import",
-  "keyword.operator.expression.is",
-  "keyword.operator.type.annotation.ts",
-  "keyword.operator.new",
-  "meta.return.type.arrow.ts",
-  "meta.return.type.ts",
-  "meta.type.annotation",
-  "meta.type.function.ts",
-  "meta.type.function.ts",
-  "meta.type.parameters.ts",
-  "meta.var.expr",
-  "punctuation.terminator.rule",
-  "punctuation.terminator.statement",
-  // Includes: `boolean`, `any`, `string`...
-  "support.type.primitive.ts"
-];
-
-let literals = [
-  // Includes booleans, null and undefined
-  "constant.language",
-  "constant.numeric",
-  "string.quoted",
-  "string.regexp",
-  "string.template",
-  "meta.array.literal",
-  "meta.objectliteral"
-];
-
-let operators = [
-  "keyword.operator.arithmetic",
-  "keyword.operator.assignment",
-  "keyword.operator.comparison",
-  "keyword.operator.expression",
-  "keyword.operator.increment",
-  "keyword.operator.list",
-  "keyword.operator.logical",
-  "keyword.operator.pipe",
-  "keyword.operator.relational",
-  "keyword.operator.spread",
-  "keyword.operator.ternary"
-];
-
-let functions = ["meta.function-call", "new.expr", "support.function"];
-
-let attentionSeekers = [
-  "comment",
-  "keyword.other.debugger",
-  "keyword.other.important",
-  "variable.language.this",
-  "variable.other.jsdoc"
-];
-
-/**
- * Tokens that somehow have been overridden by other settings and therefore
- * need to reset.
- */
-let defaults = [
-  "constant.language.import-export-all",
-  "entity.name.function.tagged-template",
-  "meta.function-call.arguments",
-  "keyword.control.flow",
-  "keyword.control.loop",
-  "meta.arrow",
-  "meta.brace.round",
-  "meta.definition.variable",
-  "meta.function.expression",
-  "meta.object-literal.key",
-  "meta.parameters",
-  "meta.template.expression",
-  "punctuation.accessor",
-  "punctuation.separator.comma",
-  "support.class",
-  "support.constant",
-  "support.type.property-name.css",
-  "support.variable",
-  "variable.language.arguments",
-  "variable.other.constant.property",
-  "variable.other.constant",
-  "variable.other.object",
-  "variable.other.property",
-  "variable.other.readwrite"
-];
-
-let tokenColor = color => token => ({
-  scope: token,
-  settings: {
-    foreground: color
-  }
-});
-
-let nonEssentialColor = "#696d77";
-let defaultColor = "#eaf2f1";
-// let functionColor = "#9cd1bb";
-let functionColor = "#bad761";
-let literalColor = "#ffd76d";
-let operatorColor = "#ff657a";
-let attentionColor = "#ff657a";
-// let attentionColor = "#c39ac9";
-
-let theme = {
-  name: "Opaline Dark",
+createTheme({
+  outputPath: "opaline-monokia-dark",
+  name: "Opaline Monokai Dark",
   type: "dark",
-  colors: {
+
+  // nonEssentialColor: "#696d77",
+  nonEssentialColor: "#b2b9bd",
+
+  defaultColor: "#eaf2f1",
+  // functionColor: "#bad761",
+  functionColor: "#9cd1bb",
+
+  literalColor: "#c39ac9",
+  // literalColor: "#ffd76d",
+  // operatorColor: "#ff657a",
+  operatorColor: "#ffd76d",
+  attentionColor: "#ff657a",
+
+  uiColors: {
     focusBorder: "#696d77",
     foreground: "#eaf2f1",
     "widget.shadow": "#161821",
@@ -390,19 +299,5 @@ let theme = {
     "gitDecoration.untrackedResourceForeground": "#ff9b5e",
     "gitDecoration.ignoredResourceForeground": "#535763",
     "gitDecoration.conflictingResourceForeground": "#ff9b5e"
-  },
-  tokenColors: [
-    ...nonEssentials.map(tokenColor(nonEssentialColor)),
-    ...literals.map(tokenColor(literalColor)),
-    ...attentionSeekers.map(tokenColor(attentionColor)),
-    ...operators.map(tokenColor(operatorColor)),
-    ...functions.map(tokenColor(functionColor)),
-    ...defaults.map(tokenColor(defaultColor))
-  ]
-};
-
-fs.writeFileSync(
-  "./themes/opaline-dark-color-theme.json",
-  JSON.stringify(theme, null, 2),
-  "utf-8"
-);
+  }
+});

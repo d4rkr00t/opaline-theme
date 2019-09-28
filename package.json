@@ -3,6 +3,7 @@
   "displayName": "opaline",
   "description": "theme",
   "version": "0.0.1",
+  "publisher": "sysoev",
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -12,9 +13,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "opaline-dark",
+        "label": "Opaline Monokai Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/opaline-dark-color-theme.json"
+        "path": "./themes/opaline-monokia-dark.json"
       }
     ]
   }

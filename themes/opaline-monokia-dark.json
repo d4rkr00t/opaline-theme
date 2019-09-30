@@ -291,7 +291,13 @@
       }
     },
     {
-      "scope": "keyword.control.as.ts",
+      "scope": "entity.name.type",
+      "settings": {
+        "foreground": "#b2b9bd"
+      }
+    },
+    {
+      "scope": "keyword.control.as",
       "settings": {
         "foreground": "#b2b9bd"
       }
@@ -447,12 +453,6 @@
       }
     },
     {
-      "scope": "variable.language.this",
-      "settings": {
-        "foreground": "#ff657a"
-      }
-    },
-    {
       "scope": "variable.other.jsdoc",
       "settings": {
         "foreground": "#ff657a"
@@ -521,49 +521,55 @@
     {
       "scope": "entity.name.function",
       "settings": {
-        "foreground": "#9cd1bb"
+        "foreground": "#bad761"
       }
     },
     {
       "scope": "entity.name.type.module",
       "settings": {
-        "foreground": "#9cd1bb"
+        "foreground": "#bad761"
       }
     },
     {
       "scope": "entity.name.type.class",
       "settings": {
-        "foreground": "#9cd1bb"
+        "foreground": "#bad761"
       }
     },
     {
       "scope": "entity.name.type.alias",
       "settings": {
-        "foreground": "#9cd1bb"
+        "foreground": "#bad761"
+      }
+    },
+    {
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "#bad761"
       }
     },
     {
       "scope": "meta.function-call",
       "settings": {
-        "foreground": "#9cd1bb"
+        "foreground": "#bad761"
       }
     },
     {
       "scope": "new.expr",
       "settings": {
-        "foreground": "#9cd1bb"
+        "foreground": "#bad761"
       }
     },
     {
       "scope": "support.function",
       "settings": {
-        "foreground": "#9cd1bb"
+        "foreground": "#bad761"
       }
     },
     {
       "scope": "support.class.component",
       "settings": {
-        "foreground": "#9cd1bb"
+        "foreground": "#bad761"
       }
     },
     {
@@ -706,6 +712,12 @@
     },
     {
       "scope": "variable.language.arguments",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
+      "scope": "variable.language.this",
       "settings": {
         "foreground": "#eaf2f1"
       }

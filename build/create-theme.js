@@ -3,7 +3,8 @@ let path = require("path");
 
 let nonEssentials = [
   "cast.expr.ts",
-  "keyword.control.as.ts",
+  "entity.name.type",
+  "keyword.control.as",
   "keyword.control.at-rule.import",
   "keyword.control.default",
   "keyword.control.export",
@@ -51,6 +52,7 @@ let functions = [
   "entity.name.type.module",
   "entity.name.type.class",
   "entity.name.type.alias",
+  "entity.name.tag",
   "meta.function-call",
   "new.expr",
   "support.function",
@@ -61,7 +63,6 @@ let attentionSeekers = [
   "comment",
   "keyword.other.debugger",
   "keyword.other.important",
-  "variable.language.this",
   "variable.other.jsdoc"
 ];
 
@@ -94,6 +95,7 @@ let defaults = [
   "support.type.property-name.css",
   "support.variable",
   "variable.language.arguments",
+  "variable.language.this",
   "variable.other.constant.property",
   "variable.other.constant",
   "variable.other.object",

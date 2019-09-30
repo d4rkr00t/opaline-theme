@@ -9,8 +9,8 @@ createTheme({
   nonEssentialColor: "#b2b9bd",
 
   defaultColor: "#eaf2f1",
-  // functionColor: "#bad761",
-  functionColor: "#9cd1bb",
+  functionColor: "#bad761",
+  // functionColor: "#9cd1bb",
 
   literalColor: "#c39ac9",
   // literalColor: "#ffd76d",

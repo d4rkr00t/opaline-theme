@@ -2,27 +2,14 @@ let fs = require("fs");
 let path = require("path");
 
 let nonEssentials = [
-  "cast.expr.ts",
-  "entity.name.type",
   "keyword.control.as",
   "keyword.control.at-rule.import",
-  "keyword.control.default",
-  "keyword.control.export",
-  "keyword.control.from",
-  "keyword.control.import",
   "keyword.operator.expression.is",
   "keyword.operator.type.annotation.ts",
-  "meta.return.type.arrow.ts",
-  "meta.return.type.ts",
-  "meta.type.annotation",
-  "meta.type.function.ts",
   "meta.type.function.ts",
   "meta.type.parameters.ts",
-  "meta.var.expr",
   "punctuation.terminator.rule",
-  "punctuation.terminator.statement",
-  // Includes: `boolean`, `any`, `string`...
-  "support.type.primitive.ts"
+  "punctuation.terminator.statement"
 ];
 
 let literals = [
@@ -49,14 +36,16 @@ let operators = [
 
 let functions = [
   "entity.name.function",
-  "entity.name.type.module",
-  "entity.name.type.class",
-  "entity.name.type.alias",
   "entity.name.tag",
+  "entity.name.type",
+  "entity.name.type.alias",
+  "entity.name.type.class",
+  "entity.name.type.interface",
+  "entity.name.type.module",
   "meta.function-call",
   "new.expr",
-  "support.function",
-  "support.class.component"
+  "support.class.component",
+  "support.function"
 ];
 
 let attentionSeekers = [
@@ -71,33 +60,44 @@ let attentionSeekers = [
  * need to reset.
  */
 let defaults = [
+  "cast.expr.ts",
   "constant.language.import-export-all",
   "entity.name.function.tagged-template",
-  "meta.function-call.arguments",
+  "keyword.control.default",
+  "keyword.control.export",
   "keyword.control.flow",
+  "keyword.control.from",
+  "keyword.control.import",
   "keyword.control.loop",
   "keyword.operator.assignment",
+  "keyword.operator.new",
   "meta.array.literal",
   "meta.arrow",
   "meta.brace.round",
   "meta.definition.variable",
+  "meta.function-call.arguments",
   "meta.function.expression",
   "meta.object-literal.key",
+  "meta.object.type",
   "meta.objectliteral",
   "meta.parameters",
+  "meta.return.type",
+  "meta.return.type.arrow",
   "meta.template.expression",
-  "keyword.operator.new",
+  "meta.type.annotation",
+  "meta.var.expr",
   "punctuation.accessor",
   "punctuation.separator.comma",
   "support.class",
   "support.constant",
   "support.function.builtin.python",
+  "support.type.primitive.ts",
   "support.type.property-name.css",
   "support.variable",
   "variable.language.arguments",
   "variable.language.this",
-  "variable.other.constant.property",
   "variable.other.constant",
+  "variable.other.constant.property",
   "variable.other.object",
   "variable.other.property",
   "variable.other.readwrite"

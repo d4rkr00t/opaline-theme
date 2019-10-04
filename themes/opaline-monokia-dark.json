@@ -285,18 +285,6 @@
   },
   "tokenColors": [
     {
-      "scope": "cast.expr.ts",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "entity.name.type",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
       "scope": "keyword.control.as",
       "settings": {
         "foreground": "#b2b9bd"
@@ -304,30 +292,6 @@
     },
     {
       "scope": "keyword.control.at-rule.import",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "keyword.control.default",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "keyword.control.export",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "keyword.control.from",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "keyword.control.import",
       "settings": {
         "foreground": "#b2b9bd"
       }
@@ -345,30 +309,6 @@
       }
     },
     {
-      "scope": "meta.return.type.arrow.ts",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "meta.return.type.ts",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "meta.type.annotation",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "meta.type.function.ts",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
       "scope": "meta.type.function.ts",
       "settings": {
         "foreground": "#b2b9bd"
@@ -381,12 +321,6 @@
       }
     },
     {
-      "scope": "meta.var.expr",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
       "scope": "punctuation.terminator.rule",
       "settings": {
         "foreground": "#b2b9bd"
@@ -394,12 +328,6 @@
     },
     {
       "scope": "punctuation.terminator.statement",
-      "settings": {
-        "foreground": "#b2b9bd"
-      }
-    },
-    {
-      "scope": "support.type.primitive.ts",
       "settings": {
         "foreground": "#b2b9bd"
       }
@@ -525,13 +453,13 @@
       }
     },
     {
-      "scope": "entity.name.type.module",
+      "scope": "entity.name.tag",
       "settings": {
         "foreground": "#bad761"
       }
     },
     {
-      "scope": "entity.name.type.class",
+      "scope": "entity.name.type",
       "settings": {
         "foreground": "#bad761"
       }
@@ -543,7 +471,19 @@
       }
     },
     {
-      "scope": "entity.name.tag",
+      "scope": "entity.name.type.class",
+      "settings": {
+        "foreground": "#bad761"
+      }
+    },
+    {
+      "scope": "entity.name.type.interface",
+      "settings": {
+        "foreground": "#bad761"
+      }
+    },
+    {
+      "scope": "entity.name.type.module",
       "settings": {
         "foreground": "#bad761"
       }
@@ -561,15 +501,21 @@
       }
     },
     {
+      "scope": "support.class.component",
+      "settings": {
+        "foreground": "#bad761"
+      }
+    },
+    {
       "scope": "support.function",
       "settings": {
         "foreground": "#bad761"
       }
     },
     {
-      "scope": "support.class.component",
+      "scope": "cast.expr.ts",
       "settings": {
-        "foreground": "#bad761"
+        "foreground": "#eaf2f1"
       }
     },
     {
@@ -585,13 +531,31 @@
       }
     },
     {
-      "scope": "meta.function-call.arguments",
+      "scope": "keyword.control.default",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
+      "scope": "keyword.control.export",
       "settings": {
         "foreground": "#eaf2f1"
       }
     },
     {
       "scope": "keyword.control.flow",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
+      "scope": "keyword.control.from",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
+      "scope": "keyword.control.import",
       "settings": {
         "foreground": "#eaf2f1"
       }
@@ -604,6 +568,12 @@
     },
     {
       "scope": "keyword.operator.assignment",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
+      "scope": "keyword.operator.new",
       "settings": {
         "foreground": "#eaf2f1"
       }
@@ -633,6 +603,12 @@
       }
     },
     {
+      "scope": "meta.function-call.arguments",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
       "scope": "meta.function.expression",
       "settings": {
         "foreground": "#eaf2f1"
@@ -640,6 +616,12 @@
     },
     {
       "scope": "meta.object-literal.key",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
+      "scope": "meta.object.type",
       "settings": {
         "foreground": "#eaf2f1"
       }
@@ -657,13 +639,31 @@
       }
     },
     {
+      "scope": "meta.return.type",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
+      "scope": "meta.return.type.arrow",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
       "scope": "meta.template.expression",
       "settings": {
         "foreground": "#eaf2f1"
       }
     },
     {
-      "scope": "keyword.operator.new",
+      "scope": "meta.type.annotation",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
+      "scope": "meta.var.expr",
       "settings": {
         "foreground": "#eaf2f1"
       }
@@ -699,6 +699,12 @@
       }
     },
     {
+      "scope": "support.type.primitive.ts",
+      "settings": {
+        "foreground": "#eaf2f1"
+      }
+    },
+    {
       "scope": "support.type.property-name.css",
       "settings": {
         "foreground": "#eaf2f1"
@@ -723,13 +729,13 @@
       }
     },
     {
-      "scope": "variable.other.constant.property",
+      "scope": "variable.other.constant",
       "settings": {
         "foreground": "#eaf2f1"
       }
     },
     {
-      "scope": "variable.other.constant",
+      "scope": "variable.other.constant.property",
       "settings": {
         "foreground": "#eaf2f1"
       }

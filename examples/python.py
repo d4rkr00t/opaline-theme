@@ -13,6 +13,9 @@ def flipEquiv(root1: TreeNode, root2: TreeNode) -> bool:
             return node.val
 
     def recur(r1, r2):
+        if r1 == 0 and r2 != 0:
+            return pow(r1, r2)
+
         if not r1 and not r2:
             return True
 

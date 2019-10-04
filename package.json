@@ -4,6 +4,9 @@
   "description": "theme",
   "version": "0.0.1",
   "publisher": "sysoev",
+  "scripts": {
+    "build": "node ./build/opaline-dark.js"
+  },
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -13,9 +16,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Opaline Monokai Dark",
+        "label": "Opaline Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/opaline-monokia-dark.json"
+        "path": "./themes/opaline-dark.json"
       }
     ]
   }

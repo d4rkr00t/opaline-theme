@@ -14,6 +14,10 @@ export function* makeIdGenerator(): Iterator<number> {
   }
 }
 
+export class Foo {
+  static prop: any;
+}
+
 interface Person {
   id: number;
   age: number;

@@ -1,15 +1,30 @@
 let fs = require("fs");
 let path = require("path");
 
-let nonEssentials = [
+let languageKeyWords = [
   "keyword.control.as",
   "keyword.control.at-rule.import",
+  "keyword.control.conditional",
+  "keyword.control.default",
+  "keyword.control.export",
+  "keyword.control.flow",
+  "keyword.control.from",
+  "keyword.control.import",
+  "keyword.control.loop",
+  "keyword.operator.assignment",
   "keyword.operator.expression.is",
+  "keyword.operator.new",
   "keyword.operator.type.annotation.ts",
+  "markup.quote.markdown",
   "meta.type.function.ts",
   "meta.type.parameters.ts",
+  "meta.var.expr",
   "punctuation.terminator.rule",
-  "punctuation.terminator.statement"
+  "punctuation.terminator.statement",
+  "storage.type.class",
+  "storage.type.function",
+  "storage.type.interface",
+  "storage.type.type"
 ];
 
 let literals = [
@@ -19,19 +34,6 @@ let literals = [
   "string.quoted",
   "string.regexp",
   "string.template"
-];
-
-let operators = [
-  "keyword.operator.arithmetic",
-  "keyword.operator.comparison",
-  "keyword.operator.expression",
-  "keyword.operator.increment",
-  "keyword.operator.list",
-  "keyword.operator.logical",
-  "keyword.operator.pipe",
-  "keyword.operator.relational",
-  "keyword.operator.spread",
-  "keyword.operator.ternary"
 ];
 
 let functions = [
@@ -63,14 +65,16 @@ let defaults = [
   "cast.expr.ts",
   "constant.language.import-export-all",
   "entity.name.function.tagged-template",
-  "keyword.control.default",
-  "keyword.control.export",
-  "keyword.control.flow",
-  "keyword.control.from",
-  "keyword.control.import",
-  "keyword.control.loop",
-  "keyword.operator.assignment",
-  "keyword.operator.new",
+  "keyword.operator.arithmetic",
+  "keyword.operator.comparison",
+  "keyword.operator.expression",
+  "keyword.operator.increment",
+  "keyword.operator.list",
+  "keyword.operator.logical",
+  "keyword.operator.pipe",
+  "keyword.operator.relational",
+  "keyword.operator.spread",
+  "keyword.operator.ternary",
   "meta.array.literal",
   "meta.arrow",
   "meta.brace.round",
@@ -85,17 +89,18 @@ let defaults = [
   "meta.return.type.arrow",
   "meta.template.expression",
   "meta.type.annotation",
-  "meta.var.expr",
   "punctuation.accessor",
   "punctuation.separator.comma",
+  "source.python",
   "support.class",
   "support.constant",
-  "support.function.builtin.python",
   "support.type.primitive.ts",
   "support.type.property-name.css",
   "support.variable",
+  "text.html.markdown",
   "variable.language.arguments",
   "variable.language.this",
+  "variable.object.property",
   "variable.other.constant",
   "variable.other.constant.property",
   "variable.other.object",
@@ -117,11 +122,10 @@ module.exports = function createTheme({
 
   uiColors,
 
-  nonEssentialColor,
+  languageKeyWordsColor,
   defaultColor,
   functionColor,
   literalColor,
-  operatorColor,
   attentionColor
 }) {
   let theme = {
@@ -129,10 +133,9 @@ module.exports = function createTheme({
     type,
     colors: uiColors,
     tokenColors: [
-      ...nonEssentials.map(tokenColor(nonEssentialColor)),
+      ...languageKeyWords.map(tokenColor(languageKeyWordsColor)),
       ...literals.map(tokenColor(literalColor)),
       ...attentionSeekers.map(tokenColor(attentionColor)),
-      ...operators.map(tokenColor(operatorColor)),
       ...functions.map(tokenColor(functionColor)),
       ...defaults.map(tokenColor(defaultColor))
     ]

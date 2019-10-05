@@ -123,7 +123,6 @@ module.exports = function createTheme({
   defaultColor,
   functionColor,
   literalColor,
-  operatorColor,
   attentionColor
 }) {
   let theme = {

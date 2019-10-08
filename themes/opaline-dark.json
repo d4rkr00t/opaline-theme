@@ -184,6 +184,12 @@
       }
     },
     {
+      "scope": "markup.quote.markdown",
+      "settings": {
+        "foreground": "#b7b7b7"
+      }
+    },
+    {
       "scope": "meta.type.function.ts",
       "settings": {
         "foreground": "#b7b7b7"
@@ -563,6 +569,12 @@
     },
     {
       "scope": "support.variable",
+      "settings": {
+        "foreground": "#e2e2e2"
+      }
+    },
+    {
+      "scope": "text.html.markdown",
       "settings": {
         "foreground": "#e2e2e2"
       }

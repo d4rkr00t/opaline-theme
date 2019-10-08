@@ -4,11 +4,17 @@ let createTheme = require("./create-theme");
  * Colors
  */
 
+let selectionBg = "#e2e2e226";
+let altBg = "#252525";
 let mainBg = "#2b2b2b";
 let sideBarBg = "#2f2f2f";
+let dropBackground = "#75757526";
 let activityBarBg = "#353535";
 let accent = "#ffca38";
 let accentText = "#292929";
+
+let defaultText = "#e2e2e2";
+let subtleText = "#b7b7b7";
 
 /**
  * Creating theme
@@ -19,8 +25,8 @@ createTheme({
   name: "Opaline Dark",
   type: "dark",
 
-  defaultColor: "#e2e2e2",
-  languageKeyWordsColor: "#b7b7b7",
+  defaultColor: defaultText,
+  languageKeyWordsColor: subtleText,
   functionColor: "#68d99d",
   literalColor: "#eb96f8",
   attentionColor: "#ff7588",
@@ -29,25 +35,25 @@ createTheme({
     "activityBarBadge.background": accent,
     "activityBarBadge.foreground": accentText,
     "activityBar.background": activityBarBg,
-    "activityBar.foreground": "#b0b0b0",
-    "activityBar.dropBackground": "#1e1f2bbf",
+    "activityBar.foreground": defaultText,
+    "activityBar.dropBackground": dropBackground,
     "activityBar.inactiveForeground": "#535763", // TODO: replace
 
     "editor.background": mainBg,
-    "editor.selectionBackground": "#e0e0e026",
-    "editor.inactiveSelectionBackground": "#e0e0e00c",
+    "editor.selectionBackground": selectionBg,
+    "editor.inactiveSelectionBackground": "#e2e2e20c",
 
     "editorGutter.background": mainBg,
     "editorGutter.modifiedBackground": accent,
     "editorGutter.addedBackground": "#bad761",
     "editorGutter.deletedBackground": "#ff657a",
-    "editorLineNumber.foreground": "#b0b0b0",
-    "editorLineNumber.activeForeground": "#e0e0e0",
+    "editorLineNumber.foreground": subtleText,
+    "editorLineNumber.activeForeground": "#eaeaea",
 
     "editorGroup.emptyBackground": mainBg,
     "editorGroup.focusedEmptyBorder": mainBg,
     "editorGroup.border": mainBg,
-    "editorGroup.dropBackground": mainBg,
+    "editorGroup.dropBackground": dropBackground,
     "editorGroupHeader.noTabsBackground": mainBg,
     "editorGroupHeader.tabsBackground": mainBg,
     "editorGroupHeader.tabsBorder": mainBg,
@@ -73,37 +79,37 @@ createTheme({
     "diffEditor.removedTextBackground": "#ff657a19",
     "diffEditor.removedTextBorder": "#00000000",
 
-    "scrollbar.shadow": "#292929",
+    "scrollbar.shadow": altBg,
 
     "sideBar.background": sideBarBg,
-    "sideBar.dropBackground": "#e0e0e026",
-    "sideBarTitle.foreground": "#e0e0e0",
+    "sideBar.dropBackground": dropBackground,
+    "sideBarTitle.foreground": defaultText,
     "sideBarSectionHeader.background": activityBarBg,
-    "sideBarSectionHeader.foreground": "#b3b3b3",
+    "sideBarSectionHeader.foreground": subtleText,
 
-    "statusBar.background": "#252525",
-    "statusBar.foreground": "#e0e0e0",
+    "statusBar.background": altBg,
+    "statusBar.foreground": defaultText,
 
-    "badge.foreground": "#292929",
+    "badge.foreground": "#252525",
     "badge.background": accent,
 
-    "list.activeSelectionBackground": "#2e2e2e",
+    "list.activeSelectionBackground": activityBarBg,
     "list.activeSelectionForeground": accent,
-    "list.dropBackground": "#2e2e2e",
+    "list.dropBackground": dropBackground,
     "list.errorForeground": "#ff657a",
-    "list.focusBackground": "#2e2e2e",
+    "list.focusBackground": sideBarBg,
     "list.focusForeground": accent,
     "list.highlightForeground": accent,
-    "list.hoverBackground": "#2e2e2e",
-    "list.hoverForeground": "#e0e0e0",
-    "list.inactiveFocusBackground": "#2e2e2e",
-    "list.inactiveSelectionBackground": "#2e2e2e",
-    "list.inactiveSelectionForeground": "#e0e0e0",
+    "list.hoverBackground": activityBarBg,
+    "list.hoverForeground": accent,
+    "list.inactiveFocusBackground": sideBarBg,
+    "list.inactiveSelectionBackground": activityBarBg,
+    "list.inactiveSelectionForeground": accent,
     "list.invalidItemForeground": "#ff657a",
     "list.warningForeground": "#ff9b5e",
-    "listFilterWidget.background": "#2e2e2e",
+    "listFilterWidget.background": sideBarBg,
     "listFilterWidget.noMatchesOutline": "#ff657a",
-    "listFilterWidget.outline": "#2e2e2e",
+    "listFilterWidget.outline": sideBarBg,
 
     "pickerGroup.border": "#282a3a",
     "pickerGroup.foreground": "#808080",
@@ -119,6 +125,26 @@ createTheme({
     "titleBar.inactiveBackground": "#1f1f1f",
     "titleBar.inactiveForeground": "#b3b3b3",
     "titleBar.border": "#222",
+
+    "terminal.ansiBlack": "#3a3d4b",
+    "terminal.ansiBlue": "#ff9b5e",
+    "terminal.ansiBrightBlack": "#696d77",
+    "terminal.ansiBrightBlue": "#ff9b5e",
+    "terminal.ansiBrightCyan": "#9cd1bb",
+    "terminal.ansiBrightGreen": "#bad761",
+    "terminal.ansiBrightMagenta": "#c39ac9",
+    "terminal.ansiBrightRed": "#ff657a",
+    "terminal.ansiBrightWhite": "#eaf2f1",
+    "terminal.ansiBrightYellow": "#ffd76d",
+    "terminal.ansiCyan": "#9cd1bb",
+    "terminal.ansiGreen": "#bad761",
+    "terminal.ansiMagenta": "#c39ac9",
+    "terminal.ansiRed": "#ff657a",
+    "terminal.ansiWhite": "#eaf2f1",
+    "terminal.ansiYellow": "#ffd76d",
+    "terminal.selectionBackground": selectionBg,
+    "terminalCursor.background": "#00000000",
+    "terminalCursor.foreground": subtleText,
 
     errorForeground: "#ff657a",
 
@@ -304,27 +330,6 @@ createTheme({
     // "extensionButton.prominentBackground": "#3a3d4b",
     // "extensionButton.prominentHoverBackground": "#535763"
 
-    // "terminal.background": "#3a3d4b",
-    // "terminal.foreground": "#eaf2f1",
-    // "terminal.ansiBlack": "#3a3d4b",
-    // "terminal.ansiBlue": "#ff9b5e",
-    // "terminal.ansiBrightBlack": "#696d77",
-    // "terminal.ansiBrightBlue": "#ff9b5e",
-    // "terminal.ansiBrightCyan": "#9cd1bb",
-    // "terminal.ansiBrightGreen": "#bad761",
-    // "terminal.ansiBrightMagenta": "#c39ac9",
-    // "terminal.ansiBrightRed": "#ff657a",
-    // "terminal.ansiBrightWhite": "#eaf2f1",
-    // "terminal.ansiBrightYellow": "#ffd76d",
-    // "terminal.ansiCyan": "#9cd1bb",
-    // "terminal.ansiGreen": "#bad761",
-    // "terminal.ansiMagenta": "#c39ac9",
-    // "terminal.ansiRed": "#ff657a",
-    // "terminal.ansiWhite": "#eaf2f1",
-    // "terminal.ansiYellow": "#ffd76d",
-    // "terminal.selectionBackground": "#eaf2f126",
-    // "terminalCursor.background": "#00000000",
-    // "terminalCursor.foreground": "#eaf2f1",
     // "debugToolBar.background": "#3a3d4b",
     // "welcomePage.buttonBackground": "#3a3d4b",
     // "welcomePage.buttonHoverBackground": "#535763",

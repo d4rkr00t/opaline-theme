@@ -120,9 +120,9 @@ createTheme({
     "gitDecoration.ignoredResourceForeground": "#535763", // TODO: replace
     "gitDecoration.conflictingResourceForeground": "#ff9b5e",
 
-    "titleBar.activeBackground": "#1f1f1f",
+    "titleBar.activeBackground": "#2f2f2f",
     "titleBar.activeForeground": "#b3b3b3",
-    "titleBar.inactiveBackground": "#1f1f1f",
+    "titleBar.inactiveBackground": "#2f2f2f",
     "titleBar.inactiveForeground": "#b3b3b3",
     "titleBar.border": "#222",
 

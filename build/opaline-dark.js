@@ -4,7 +4,9 @@ let createTheme = require("./create-theme");
  * Colors
  */
 
-let mainBg = "#232323";
+let mainBg = "#2b2b2b";
+let sideBarBg = "#2f2f2f";
+let activityBarBg = "#353535";
 let accent = "#ffca38";
 let accentText = "#292929";
 
@@ -17,16 +19,16 @@ createTheme({
   name: "Opaline Dark",
   type: "dark",
 
-  defaultColor: "#e0e0e0",
-  languageKeyWordsColor: "#b3b3b3",
+  defaultColor: "#e2e2e2",
+  languageKeyWordsColor: "#b7b7b7",
   functionColor: "#68d99d",
-  literalColor: "#dd96e8",
-  attentionColor: "#ff657a",
+  literalColor: "#eb96f8",
+  attentionColor: "#ff7588",
 
   uiColors: {
     "activityBarBadge.background": accent,
     "activityBarBadge.foreground": accentText,
-    "activityBar.background": "#292929",
+    "activityBar.background": activityBarBg,
     "activityBar.foreground": "#b0b0b0",
     "activityBar.dropBackground": "#1e1f2bbf",
     "activityBar.inactiveForeground": "#535763", // TODO: replace
@@ -73,10 +75,10 @@ createTheme({
 
     "scrollbar.shadow": "#292929",
 
-    "sideBar.background": "#262626",
+    "sideBar.background": sideBarBg,
     "sideBar.dropBackground": "#e0e0e026",
     "sideBarTitle.foreground": "#e0e0e0",
-    "sideBarSectionHeader.background": "#292929",
+    "sideBarSectionHeader.background": activityBarBg,
     "sideBarSectionHeader.foreground": "#b3b3b3",
 
     "statusBar.background": "#252525",

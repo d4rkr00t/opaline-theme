@@ -1,22 +1,46 @@
-# README
+# Opaline Theme
 
-// TODO: screenshot
+![TypeScript / JavaScript](./assets/typescript-javascript.png)
 
-## Goals
+## Features
 
 - High contrast theme AA (4.5+)
 - Minimal syntax highlighting inspired by Alabaster
-- Dark and Light variants
+- Special treatment for: JavaScript, TypeScript, Python, Rust
+- Dark and Light variants (TODO)
+- Optional icon theme (TODO)
 
-### High contrast
+Know issues:
+
+- Tabs are not really been tested for the MVP. (TODO)
 
 ### Minimal syntax highlighting
 
-### Dark and Light variants
+This theme explores an idea of reducing amount of syntax highlighting and focusing on code more rather than having a cristmas tree of an editor.
 
-// TODO: just screenshots
+Opaline defines 5 categories of tokens for syntax highlighting:
+
+1. Language Keywords
+2. Literals – constants, regexp, boolean, strings, numbers, etc...
+3. Functions – functions, classes, types...
+4. Attention seekers – anything that requires as much attention as possible – comment, debugger statements, etc...
+5. Everything else
+
+### Screenshots
+
+#### TypeScript / JavaScript
+
+![TypeScript / JavaScript](./assets/typescript-javascript.png)
+
+#### Python
+
+![Python](./assets/python.png)
+
+#### Rust
+
+![Rust](./assets/rust.png)
 
 ### Credits
 
-- [Alabaster](url)
-- [Andy Bell's website](url)
+- [Alabaster](https://github.com/tonsky/vscode-theme-alabaster) – inspiration for syntax highlighting
+- [Andy Bell's website](https://hankchizljaw.com/) – ideas for colors

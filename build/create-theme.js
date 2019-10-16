@@ -1,7 +1,7 @@
 let fs = require("fs");
 let path = require("path");
 
-let languageKeyWords = [
+let languageKeywords = [
   "keyword.control.as",
   "keyword.control.at-rule.import",
   "keyword.control.conditional",
@@ -133,7 +133,7 @@ module.exports = function createTheme({
     type,
     colors: uiColors,
     tokenColors: [
-      ...languageKeyWords.map(tokenColor(languageKeyWordsColor)),
+      ...languageKeywords.map(tokenColor(languageKeyWordsColor)),
       ...literals.map(tokenColor(literalColor)),
       ...attentionSeekers.map(tokenColor(attentionColor)),
       ...functions.map(tokenColor(functionColor)),

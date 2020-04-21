@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "publisher": "sysoev",
   "scripts": {
-    "build": "node ./build/opaline-dark.js"
+    "build": "node ./build/opaline-dark.js && node ./build/opaline-dark-mono.js"
   },
   "engines": {
     "vscode": "^1.38.0"
@@ -26,7 +26,17 @@
         "label": "Opaline Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/opaline-dark.json"
+      },
+      {
+        "label": "Opaline Dark Mono",
+        "uiTheme": "vs-dark",
+        "path": "./themes/opaline-dark-mono.json"
       }
     ]
+  },
+  "__metadata": {
+    "id": "0421529a-44f2-4c9e-99e5-7625e911a5ba",
+    "publisherDisplayName": "sysoev",
+    "publisherId": "c0885fa3-3b61-4f83-b035-0d441817979b"
   }
 }

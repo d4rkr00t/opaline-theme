@@ -43,7 +43,7 @@ function makeCreatePerson(idGenerator: Iterator<number>) {
     age: 42,
     longName: name.length >= 9,
     name,
-    online: false
+    online: false,
   });
 }
 
